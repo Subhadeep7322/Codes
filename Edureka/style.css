@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* this is the header bar */
@@ -84,4 +84,79 @@ header .log {
 
 .log ul li a:hover {
     border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.intro {
+    width: 100vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.364);
+    margin: 15vh 0;
+    display: flex;
+}
+
+.intro .left {
+    width: 40vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+
+.intro .left img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.intro .right {
+    width: 60vw;
+    height: 60vh;
+    /* background-color: aqua; */
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro .right h1 {
+    font-size: 4rem;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+
+.intro .right h3 {
+    font-family: "Poppins", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.intro .right button {
+    width: 20vw;
+    /* padding: 1rem 1rem; */
+    margin-top: 2.1rem;
+    outline: none;
+    border: none;
+}
+
+.intro .right button a{
+    font-size: .9rem;
+    letter-spacing: 1px;
+    font-family: arial;
+    color: rgb(255, 255, 255);
+    background-color: #6877b8;
+    padding: 1rem 3.8rem;
+    transition: .5s ease-in-out;
+    /* border: 2px double rgba(0, 0, 0, 0); */
+}
+
+.intro .right button a:hover {
+    color: rgb(5, 5, 5);
+    font-weight: 400;
+    border-radius: 50px 5px 50px 5px;
+    /* border-top-left-radius: 35px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 5px; */
+    /* border: 2px double black; */
 }

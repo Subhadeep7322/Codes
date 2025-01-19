@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* this is the header bar */
+
+header {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.412);
+}
+
+header img {
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+}
+
+nav {
+    width: 60vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem 3rem;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    transition: .5s ease-in-out;
+    color: black;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+/* this is the log section */
+
+header .log {
+    width: 20vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.log ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.log ul li {
+    display: flex;
+}
+
+.log ul li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem 3rem;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    transition: .5s ease-in-out;
+    color: black;
+}
+
+.log ul li a:hover {
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+/* this is the heading section of the website*/
+
+.intro {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    margin: 15vh 0;
+    padding: 0 5vw;
+}
+
+.intro .left, .right {
+    width: 50vw;
+    height: 60vh;
+}
+
+.intro .left img {
+    height: 100%;
+    transform: translateX(6rem);
+}
+
+.intro .right {
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.intro .right p {
+    font-size: 1.5rem;
+    font-family: "Quicksand", serif;
+    font-weight: 00;
+}
+
+.intro .right span{
+    font-size: 3rem;
+    color: #215b71;
+    letter-spacing: 1px;
+}
+
+/* this is the staring of the cards section */
+
+
+.courses {
+    width: 100vw;
+    height: auto;
+    margin: 20vh 0;
+}
+
+.courses h1 {
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+}
+
+.courses h1 img{
+    height: 30px;
+    transform: translateY(3px);
+}
+
+.courses .cards_section {
+    width: 100vw;
+    height: 80vh;
+    margin: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: rgb(184, 171, 171); */
+}
+
+.cards_section .cards {
+    width: 25vw;
+    height: 80vh;
+    padding: 1rem 2rem;
+    /* background-image: linear-gradient(180deg, rgb(214, 214, 214), rgb(170, 170, 170), rgb(168, 168, 168), rgb(124, 124, 124)); */
+    /* background-color: rgb(242, 242, 242); */
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px grey;
+}
+
+.cards img {
+    height: 10rem;
+    margin: 2vh auto;
+}
+
+.cards p {
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.2vh 0;
+}
+
+.cards button {
+    width: 18vw;
+    margin: 0 auto;
+    margin-top: 2vh;
+    padding: 2vh;
+    border: none;
+    /* background-color: #ae6c6c; */
+}
+
+.cards button a {
+    color: white;
+    background-color: #215b71;
+    padding: 2vh 5vw;
+    transition: .5s ease-in-out;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.cards button a:hover {
+    background-color: white;
+    color: #215b71;
+    border: 1px solid #215b71;
+    box-shadow: 5px 5px 10px #215b71;
+}
+
+#name_of_course {
+    margin: 0 auto;
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+    /* text-transform: uppercase; */
+}
+
+#age {
+    font-size: 1rem;
+    font-family: cursive;
+    margin: 0 auto;
+    background-color: #d5a158;
+    color: rgb(0, 0, 0);
+    padding: 1vh 3vw;
+}
+
+#desc {
+    font-size: .9rem;
+    margin: 2vh 0;
+    line-height: 3vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
